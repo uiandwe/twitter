@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>test</title>
+ <script src = "http://code.jquery.com/jquery-1.7.1.js"></script>
+ <script src = "/socket.io/socket.io.js"></script>
+
+
+<script>
+ var result  = Array();
+  $(document).ready(function() {
+   var socket = io.connect();
+   socket.on('message_twi', function (data) {
+      for(var i=1; i<=9; i++){    
+           $('#twi_text'+i).val(data[i]);  
+    }
+   });
+
+   socket.on('message', function (data) {
+       for(var i=0; i<data.length; i++){
+           var tf = 0;
+            for(var j=0; j<result.length; j++){
+                if(result[j]==data[i]){
+                    tf = 1;
+twi_lan_count(data[i]);
+                }
+            }
+            if(tf==0){
+                result.push(data[i]);
+                imageInsert(data[i]);
+twi_lan(data[i]);
+            }
+       }
+   
+   });
+  });
+
+
+function twi_lan_count(iso_language_code)
+    {
+      $(function()
+      {
+ var count =  parseInt($('#'+iso_language_code).val())+1;
+ $('#'+iso_language_code).val(count);
+      });
+    }
+
+
+   function twi_lan(iso_language_code)
+    {
+      $(function()
+      {  
+     $("#MainTable").append("<tr><td>"+iso_language_code+"</td><td><input id='"+iso_language_code+"' value=1 /></td></tr>");
+      });
+    }
+
+
+    function imageInsert(iso_language_code)
+    {
+      $(function()
+      {
+  $('#twiImage').prepend('<a href=#>'+iso_language_code+'</a> ');     
+      });
+    }
+       
+ </script>
+
+<div>
+  <input id='twi_text1'/>
+  <input id='twi_text2'/>
+  <input id='twi_text3'/><br>
+  <input id='twi_text4'/>
+  <input id='twi_text5'/>
+  <input id='twi_text6'/><br>
+  <input id='twi_text7'/>
+  <input id='twi_text8'/>
+  <input id='twi_text9'/>
+</div>
+<div>
+<span id='twiImage'></span>
+<table id="MainTable">
+</table>
+</div>
+
+ </body>
+</html>
