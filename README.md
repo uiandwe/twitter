@@ -1,35 +1,36 @@
+1. í”„ë¡œì íŠ¸ ì„¤ëª…
+  - twitter-uiandwe í”„ë¡œì íŠ¸ëŠ”  íŠ¸ìœ„í„° ì¿¼ë¦¬ë¥¼ ì´ìš©í•˜ì—¬ ê³µê°œëœ íŠ¸ìœ—ì˜ ì–¸ì–´ë³„ë¡œ 
+    ì¹´ìš´íŒ… ê¸°ëŠ¥ì„ í•©ë‹ˆë‹¤.
 
-twitter Àº  Æ®À§ÅÍ Äõ¸®¸¦ ÀÌ¿ëÇÏ¿© °ø°³µÈ Æ®À§ÅÍÀÇ ¾ð¾îº°·Î Ä«¿îÆÃ ±â´ÉÀ» ÇÕ´Ï´Ù.
+2. ì œìž‘ ê¸°ê°„
+  - 2013 02 19 ~ 21
 
-1. ÆÄÀÏ ±¸¼º
-  - app.js : ¼­¹ö 
-  - index.html : Å¬¶óÀÌ¾ðÆ®
-
-
-2. »ç¿ë ¸ðµâ
-  - request : Å¬¶óÀÌ¾ðÆ® ÀÀ´ä
-  - JSONStream : JSON ÆÄÀÏ ÆÄ½Ì
-  - event-stream : JSON ÆÄ½Ì µ¥ÀÌÅÍ ÆÄÀÌÇÁ ¿¬°á 
-  - async : ÆÄ½Ì¿¡ ´ëÇÑ Æä·¯·²Ã³¸®
-  - socket.io : Å¬¶óÀÌ¾ðÆ®·ÎÀÇ µ¥ÀÌÅÍ ¼ö½Å
-  - express : ¼­¹ö½ÇÇà ¹× °ü¸®
+3. íŒŒì¼ êµ¬ì„±
+  - app.js : ì„œë²„ 
+  - index.html : í´ë¼ì´ì–¸íŠ¸
 
 
-3. ÄÚµå ¼³¸í
-  - thread1()ÇÔ¼ö¿¡ ¸ðµç°ÍÀÌ Ã³¸®µË´Ï´Ù.
-    JSONStream ÆÄ¼­¿¡ ÀÇÇØ¼­ ¿äÃ»µÈ Äõ¸®¹®À» ÆÄ½ÌÇÑ ´ÙÀ½ ¾ð¾îÄÚµå(iso_language_code) ¿Í 
-    Æ®À­±Û(text)¸¦ °¢°¢ÀÇ ¹è¿­¿¡ Â÷·Ê·Î ³Ö½À´Ï´Ù. 
-    ³ÖÀº µ¥ÀÌÅÍ´Â ÆÐ·¯·²ÀÌ ³¡³ª´Â ¸Ç ¸¶Áö¸· ½ÃÁ¡¿¡¼­ Å¬¶óÀÌ¾ðÆ®·Î socket.io·Î Àü¼ÛµÇ°í 
-    Å¬¶óÀÌ¾ðÆ®´Ü(index.html)¿¡¼­ ¹ÞÀº µ¥ÀÌÅÍµéÀ» Â÷·Ê·Î º¸¿©ÁÖ¸ç Ä«¿îÆÃÇÕ´Ï´Ù.
+4. ì‚¬ìš© ëª¨ë“ˆ
+  - request : í´ë¼ì´ì–¸íŠ¸ ì‘ë‹µ
+  - JSONStream : JSON íŒŒì¼ íŒŒì‹±
+  - event-stream : JSON íŒŒì‹± ë°ì´í„° íŒŒì´í”„ ì—°ê²° 
+  - async : íŒŒì‹±ì— ëŒ€í•œ íŽ˜ëŸ¬ëŸ´ì²˜ë¦¬
+  - socket.io : í´ë¼ì´ì–¸íŠ¸ë¡œì˜ ë°ì´í„° ìˆ˜ì‹ 
+  - express : ì„œë²„ì‹¤í–‰ ë° ê´€ë¦¬
 
 
-- ÇÑ±¹¾î°ú ÀÏ¾î°¡ ¸¹Àº ÀÌÀ¯´Â Äõ¸®ÀÇ Áß½ÉÀÌ ÇÑ±¹¿¡¼­ ºÎÅÍ °Ë»öÇÏ±â ¶§¹®ÀÔ´Ï´Ù.
-  (ÇÑ±¹¿¡¼­ ¹Ý°æ 12500km¸¦ °Ë»öÇÕ´Ï´Ù.)
-
-- node.js °øºÎÇÑÁö 3ÀÏ¸¸¿¡ ¸¸µç°Å¶ó ¸¹ÀÌ ºÎÁ·ÇÕ´Ï´Ù. °íÄ¥°ÍÀÌ ÀÖ´Ù¸é ºí·Î±×¿¡ ³²°ÜÁÖ¼¼¿ä
-  (uiandwe.tistory.com)
-
-- ¹èÆ÷ ¹× ¼öÁ¤Àº ¸¶À½²¯ ÇÏ¼Åµµ µË´Ï´Ù.
-
+5. ì½”ë“œ ì„¤ëª…
+  - thread1()í•¨ìˆ˜ì— ëª¨ë“ ê²ƒì´ ì²˜ë¦¬ë©ë‹ˆë‹¤.
+    JSONStream íŒŒì„œì— ì˜í•´ì„œ ìš”ì²­ëœ ì¿¼ë¦¬ë¬¸ì„ íŒŒì‹±í•œ ë‹¤ìŒ ì–¸ì–´ì½”ë“œ(iso_language_code) ì™€ 
+    íŠ¸ìœ—ê¸€(text)ë¥¼ ê°ê°ì˜ ë°°ì—´ì— ì°¨ë¡€ë¡œ ë„£ìŠµë‹ˆë‹¤. 
+    ë„£ì€ ë°ì´í„°ëŠ” íŒ¨ëŸ¬ëŸ´ì´ ëë‚˜ëŠ” ë§¨ ë§ˆì§€ë§‰ ì‹œì ì—ì„œ í´ë¼ì´ì–¸íŠ¸ë¡œ socket.ioë¡œ ì „ì†¡ë˜ê³  
+    í´ë¼ì´ì–¸íŠ¸ë‹¨(index.html)ì—ì„œ ë°›ì€ ë°ì´í„°ë“¤ì„ ì°¨ë¡€ë¡œ ë³´ì—¬ì£¼ë©° ì¹´ìš´íŒ…í•©ë‹ˆë‹¤.
 
 
+- í•œêµ­ì–´ê³¼ ì¼ì–´ê°€ ë§Žì€ ì´ìœ ëŠ” ì¿¼ë¦¬ì˜ ì¤‘ì‹¬ì´ í•œêµ­ì—ì„œ ë¶€í„° ê²€ìƒ‰í•˜ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.
+  (í•œêµ­ì—ì„œ ë°˜ê²½ 12500kmë¥¼ ê²€ìƒ‰í•©ë‹ˆë‹¤.)
+
+- node.js ê³µë¶€í•œì§€ 3ì¼ë§Œì— ë§Œë“ ê±°ë¼ ë§Žì´ ë¶€ì¡±í•©ë‹ˆë‹¤. ìˆ˜ì • ë¶€ë¶„/ ë¬¸ì˜ì‚¬í•­ì´ ìžˆë‹¤ë©´ 
+  ë¸”ë¡œê·¸ì— ë‚¨ê²¨ì£¼ì„¸ìš” (uiandwe.tistory.com)
+
+- ë°°í¬ ë° ìˆ˜ì •ì€ ë§ˆìŒê» í•˜ì…”ë„ ë©ë‹ˆë‹¤.
